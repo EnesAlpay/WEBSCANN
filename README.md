@@ -41,6 +41,4 @@ python3 webscann.py veya python webscann.py yazarak kullanabilirsiniz.
 
 [-] 3. Scan vulnerabilities
 
-[-] 4. Perform DOS attack
-
 [-] Enter your choice (1/2/3/4): 

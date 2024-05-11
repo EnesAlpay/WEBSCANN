@@ -79,7 +79,7 @@ def main():
     print("\n[-] 1. Listen for connections")
     print("\n[-] 2. Scan ports")
     print("\n[-] 3. Scan vulnerabilities")
-    print("\n[-] 4. Perform DOS attack")
+
     choice = input("\n[-] Enter your choice (1/2/3/4): ")
 
     if choice == "1":
